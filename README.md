@@ -20,6 +20,11 @@ BlockScout is an Elixir application that allows users to search transactions, vi
 
 Currently available full-featured block explorers (Etherscan, Etherchain, Blockchair) are closed systems which are not independently verifiable.  As Ethereum sidechains continue to proliferate in both private and public settings, transparent, open-source tools are needed to analyze and validate transactions.
 
+## About op-geth version
+This repo is a special version for op-geth.
+- Diff 1 : Transaction gas_price null fixed (causes blank error), add fields -> is_system_tx, mint, source_hash
+- Diff 2 : BLOCK_TRANSFORMER env sets to 'base'
+
 ## Supported Projects
 
 BlockScout supports a number of projects. Hosted instances include POA Network, Gnosis Chain, Ethereum Classic, Sokol & Kovan testnets, and other EVM chains.
